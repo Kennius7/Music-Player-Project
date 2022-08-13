@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="appTitle">Music Player</h1>
+    <div id="border">
+        <div id="display">
+            <img src="" alt="" id="albumArt">
+            <audio src="" id="audio"></audio>
+        </div>
+        <div id="controlMenu">
+            <div id="volumeBox">
+                <div id="volumeText">Volume</div>
+                <input type="range" id="volume" min="0" max="100" onchange="volumeChange()">
+            </div>
+            <div class="controlButtons">
+                <button id="prev" class="action-button" onclick="prevSong()">
+                    <img src="icons/previous.png" alt="prev-btn" id="prev-icon" class="buttonImg">
+                </button>
+                <button id="rewind" class="action-button" onclick="">
+                    <img src="icons/rewind.png" alt="rewind-btn" id="rewind-icon" class="buttonImg">
+                </button>
+                <button id="play" class="action-button-big" onclick="player()">
+                    <img src="icons/play.png" alt="play-btn" id="play-icon" class="playButtonImg">
+                </button>
+                <button id="fastForward" class="action-button" onclick="">
+                    <img src="icons/fastforward.png" alt="fastForward-btn" id="fastForward-icon" class="buttonImg">
+                </button>
+                <button id="next" class="action-button" onclick="nextSong()">
+                    <img src="icons/next.png" alt="next-btn" id="next-icon" class="buttonImg">
+                </button>
+            </div>
+        </div>
+        <div id="slider"><input type="range" id="songProgress" min="0" max="100" onchange="songSlider()"></div>
+        <div id="bottomMenu">
+            <div id="songTitle"></div>
+            <div id="songArtist"></div>
+        </div>
+    </div>
+</body>
+</html>
