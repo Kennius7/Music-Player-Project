@@ -16,63 +16,63 @@ const loopButtonText = document.getElementById("loopControls");
 
 const songs = [
     {
-     songName: "Adiemus",
-     songArtist: "Enya",
-     coverArt: "img/Vibekiller.jpg",
-     audioFile: "mp3/Adiemus.mp3"
+    songName: "Adiemus",
+    songArtist: "Enya",
+    coverArt: "img/adiemus.jpg",
+    audioFile: "mp3/Adiemus.mp3"
     },
     {
     songName: "Adonai",
     songArtist: "Nathaniel Bassey",
-    coverArt: "img/All_Eyes.jpg",
+    coverArt: "img/Vibekiller.jpg",
     audioFile: "mp3/Adonai.mp3"
     },
     {
     songName: "Another Day In Paradise",
     songArtist: "Phil Collins",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/phil collins.jpg",
     audioFile: "mp3/Another_Day_In_Paradise.mp3"
     },
     {
     songName: "Cinematic Trailer",
     songArtist: "Unknown",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/album_art1.jpg",
     audioFile: "mp3/Cinematic Trailer.mp3"
     },
     {
     songName: "Climb Together",
     songArtist: "Audiomachine",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/album_art2.jpg",
     audioFile: "mp3/Climb Together_Audiomachine.mp3"
     },
     {
     songName: "Clocks",
     songArtist: "Coldplay",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/clock.jpg",
     audioFile: "mp3/Clocks.mp3"
     },
     {
     songName: "Motion Array Soundtrack",
     songArtist: "Renderforest",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/album_art3.jpeg",
     audioFile: "mp3/Motion_Array_Soundtrack.mp3"
     },
     {
     songName: "Optical Flare Soundtrack",
     songArtist: "Renderforest",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/album_art4.jpg",
     audioFile: "mp3/Optical_Flare_Soundtrack.mp3"
     },
     {
     songName: "Safe",
     songArtist: "M.I. Abaga",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/safe.jpg",
     audioFile: "mp3/Safe.mp3"
     },
     {
     songName: "The Good In Me",
     songArtist: "Jon Bellion",
-    coverArt: "img/Zambololo.jpg",
+    coverArt: "img/jon_bellion.jpg",
     audioFile: "mp3/The_Good_In_Me.mp3"
     }
 ];
