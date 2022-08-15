@@ -8,6 +8,217 @@ body {
     padding: 0px;
     margin: 0px;
     background: linear-gradient(to right, rgb(158, 184, 206), rgb(76, 184, 76));
+    width: 100%;
+    height: 90vh;
+}
+
+#appTitle {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#border {
+    margin: auto;
+    padding-top: 13px;
+    background-color: azure;
+    width: 350px;
+    height: 280px;
+    border-radius: 5px;
+
+    animation: color1 ease-in-out alternate-reverse infinite;
+    animation-duration: 0s;
+   
+}
+
+@keyframes color1 {
+    from {
+        background-color: rgb(14, 165, 165);
+    }
+
+    to {
+        background-color: goldenrod;
+    }
+}
+
+
+#display {
+    margin: auto;
+    background-color: rgb(180, 243, 243);
+    width: 95%;
+    height: 96%;
+    border-radius: 5px;
+}
+
+#albumArt {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#slider {
+    margin-top: 7px;
+    background-color: rgb(15, 61, 61);
+    width: 350px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#songProgress {
+    width: 99%;
+}
+
+#volumeBox {
+    width: 16%;
+    margin-left: -15px;
+    margin-bottom: 2px;
+}
+
+#volume {
+    width: 100%;
+}
+
+#volumeText {
+    color: rgb(24, 66, 26);
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 0;
+}
+
+#bottomMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8px;
+    background-color: rgb(22, 150, 150);
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#songID {
+    margin-left: 3px;
+    width: 50%;
+}
+
+#trackID {
+    margin-right: 3px;
+    width: 50%;
+}
+
+#songTitle {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#songArtist {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#trackIndex {
+    font-size: 13px;
+    text-align: end;
+}
+
+#trackDuration {
+    font-size: 13px;
+    text-align: end;
+}
+
+#controlMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 10px;
+    background-color: rgb(228, 220, 118);
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.controlButtons {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-button {
+    border: 0;
+    border-radius: 5px;
+    width: 30px;
+    height: 28px;
+}
+
+.buttonImg {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.action-button:hover {
+    background-color: aqua;
+}
+
+.action-button-big {
+    border: 0;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+}
+
+.action-button-big:hover {
+    background-color: aqua;
+}
+
+.playButtonImg {
+    padding-top: 3px;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+}
+
+.stopButtonImg {
+    padding-top: 3px;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+}
+
+#loopControls {
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px){
+    *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, rgb(158, 184, 206), rgb(76, 184, 76));
 }
 
 #appTitle {
@@ -41,8 +252,6 @@ body {
     }
 }
 
-
-
 #display {
     margin: auto;
     background-color: rgb(180, 243, 243);
@@ -70,7 +279,7 @@ body {
 }
 
 #volumeBox {
-    width: 18%;
+    width: 16%;
     margin-left: -15px;
     margin-bottom: 2px;
 }
@@ -91,6 +300,9 @@ body {
 }
 
 #bottomMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 8px;
     margin-left: 10px;
     background-color: rgb(22, 150, 150);
@@ -99,8 +311,28 @@ body {
     border-radius: 5px;
 }
 
+#songID {
+    margin-left: 3px;
+    width: 50%;
+}
+
+#trackID {
+    margin-right: 3px;
+    width: 50%;
+}
+
 #songTitle {
-    color: aliceblue;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#songArtist {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#trackIndex {
+    text-align: end;
 }
 
 #controlMenu {
@@ -109,6 +341,7 @@ body {
     justify-content: space-around;
     margin-top: 10px;
     margin-left: 10px;
+    padding-left: 10px;
     background-color: rgb(228, 220, 118);
     width: 480px;
     height: 35px;
@@ -139,8 +372,6 @@ body {
     background-color: aqua;
 }
 
-
-
 .action-button-big {
     border: 0;
     border-radius: 5px;
@@ -158,6 +389,39 @@ body {
     width: 22px;
     height: 22px;
 }
+
+.stopButtonImg {
+    padding-top: 3px;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+}
+
+#loopControls {
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -24,24 +24,36 @@
                 <button id="prev" class="action-button" onclick="prevSong()">
                     <img src="icons/previous.png" alt="prev-btn" id="prev-icon" class="buttonImg">
                 </button>
-                <button id="rewind" class="action-button" onclick="">
+                <button id="rewind" class="action-button" onclick="rewind()">
                     <img src="icons/rewind.png" alt="rewind-btn" id="rewind-icon" class="buttonImg">
                 </button>
                 <button id="play" class="action-button-big" onclick="player()">
                     <img src="icons/play.png" alt="play-btn" id="play-icon" class="playButtonImg">
                 </button>
-                <button id="fastForward" class="action-button" onclick="">
+                <button id="stop" class="action-button-big" onclick="stop()">
+                    <img src="icons/stop.png" alt="" id="stop-icon" class="stopButtonImg">
+                </button>
+                <button id="fastForward" class="action-button" onclick="fastForward()">
                     <img src="icons/fastforward.png" alt="fastForward-btn" id="fastForward-icon" class="buttonImg">
                 </button>
                 <button id="next" class="action-button" onclick="nextSong()">
                     <img src="icons/next.png" alt="next-btn" id="next-icon" class="buttonImg">
                 </button>
             </div>
+            <div>
+                <button id="loopControls" onclick="loopControls()">No Loop</button>
+            </div>
         </div>
         <div id="slider"><input type="range" id="songProgress" min="0" max="100" onchange="songSlider()"></div>
         <div id="bottomMenu">
-            <div id="songTitle"></div>
-            <div id="songArtist"></div>
+            <div id="songID">
+                <div id="songTitle"></div>
+                <div id="songArtist"></div>
+            </div>
+            <div id="trackID">
+                <div id="trackIndex"></div>
+                <div id="trackDuration"></div>
+            </div>
         </div>
     </div>
 </body>
